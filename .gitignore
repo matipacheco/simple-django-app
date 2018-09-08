@@ -1,4 +1,7 @@
-django-app/
+.DS_Store
+
+# Virtualenv folder name
+django-env/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,15 +1,11 @@
-# set the base image 
-FROM python:3.6
+# Set the base image to use to Ubuntu
+FROM ubuntu:16.04
 
 # File Author / Maintainer
-MAINTAINER Esther
-
-#add project files to the usr/src/app folder
-ADD . /usr/src/app
+MAINTAINER Matías Pacheco
 
 #set directoty where CMD will execute 
-WORKDIR /usr/src/app
-COPY requirements.txt ./
+WORKDIR /
 
 # Get pip to download and install requirements:
 RUN pip install --no-cache-dir -r requirements.txt
@@ -18,4 +14,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # default command to execute    
-CMD exec gunicorn djangoapp.wsgi:application --bind 0.0.0.0:8000 --workers 3
+CMD python manage.py runserver

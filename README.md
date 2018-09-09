@@ -12,6 +12,15 @@ I know, should not put the .pem key here, but... well... fuck off
 
 Create a [source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html#using-features.deployment.source.git) to transfer the project to the EC2 instance
 
+Generate the source bundle
+
+`git archive -v -o simple_django_app.zip --format=zip HEAD`
+
+Upload the source bundle to the instance
+
+`scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
+
+
 # Reference
 
 [Accessing Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)

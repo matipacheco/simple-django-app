@@ -32,7 +32,7 @@ Upload the source bundle to the instance:
 
 ## Run the docker image
 
-`docker run -p 80:80 simple_django_app`
+`sudo docker run -p 8000:8000 -i -t simple_django_app`
 
 # References
 

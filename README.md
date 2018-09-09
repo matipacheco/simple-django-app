@@ -10,7 +10,7 @@ I know, should not put the .pem key here, but... well... fuck off
 
 # Docker the shit out of this
 
-##Create a [source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html#using-features.deployment.source.git) to transfer the project to the EC2 instance
+## Create a [source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html#using-features.deployment.source.git) to transfer the project to the EC2 instance
 
 Generate the source bundle
 
@@ -26,7 +26,7 @@ Upload the source bundle to the instance
 
 `scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
 
-##Build the docker image
+## Build the docker image
 
 `docker build -t simple_django_app .`
 

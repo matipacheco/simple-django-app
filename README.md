@@ -35,6 +35,9 @@ Upload the source bundle to the instance
 # Reference
 
 [Accessing Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html)
+
 [AWS Docker Basics](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html#install_docker)
+
 [Docker + Django](https://dzone.com/articles/how-to-deploy-a-django-application-with-docker)
+
 [DOcker + Django](https://medium.com/@Alibaba_Cloud/how-to-deploy-a-django-application-with-docker-9514be542909)

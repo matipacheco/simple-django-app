@@ -20,6 +20,10 @@ Upload the source bundle to the instance
 
 `scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
 
+Build the docker image
+
+`docker build -t simple_django_app .`
+
 
 # Reference
 

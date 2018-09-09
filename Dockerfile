@@ -1,17 +1,22 @@
-# Set the base image to use to Ubuntu
-FROM ubuntu:16.04
+# set the base image
+FROM python:3.6
 
 # File Author / Maintainer
-MAINTAINER Matías Pacheco
+MAINTAINER Esther
 
-#set directoty where CMD will execute 
-WORKDIR /
+#add project files to the usr/src/app folder
+ADD . /usr/src/app
+
+#set directoty where CMD will execute
+WORKDIR /usr/src/app
+COPY requirements.txt ./
 
 # Get pip to download and install requirements:
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose ports
 EXPOSE 8000
 
-# default command to execute    
+# default command to execute
 CMD python manage.py runserver

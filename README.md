@@ -2,6 +2,10 @@
 
 Trying to deploy (I mean, really deploy) a Django app to an EC2 instance using ECS
 
+Note: I did it! Rejoice with [this](http://ec2-54-210-82-193.compute-1.amazonaws.com:8000/) beauty!
+
+![](https://s3.amazonaws.com/nigro-public-assets/evil_laugh.gif)
+
 # Enter the instance
 
 I know, I should not put the .pem key here, but... well... fuck off!

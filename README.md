@@ -10,6 +10,7 @@ I know, should not put the .pem key here, but... well... fuck off
 
 # Docker the shit out of this
 
+Create a [source bundle](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/applications-sourcebundle.html#using-features.deployment.source.git) to transfer the project to the EC2 instance
 
 # Reference
 

@@ -2,7 +2,7 @@
 FROM python:3.6
 
 # File Author / Maintainer
-MAINTAINER Esther
+MAINTAINER Mati
 
 #add project files to the usr/src/app folder
 ADD . /usr/src/app
@@ -19,4 +19,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8000
 
 # default command to execute
-CMD python manage.py runserver
+CMD exec gunicorn --bind 0.0.0.0:8000 simple_django_app.wsgi

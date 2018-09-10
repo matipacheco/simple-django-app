@@ -8,7 +8,7 @@ Note: I did it! Rejoice with [this](http://ec2-54-210-82-193.compute-1.amazonaws
 
 # Enter the instance
 
-I know, I should not put the .pem key here, but... well... fuck off!
+~I know, I should not put the .pem key here, but... well... fuck off!~
 
 `ssh -i simple_django_app.pem ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com`
 

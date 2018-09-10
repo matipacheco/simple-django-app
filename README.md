@@ -20,15 +20,15 @@ Generate the source bundle:
 
 `git archive -v -o simple_django_app.zip --format=zip HEAD`
 
+Upload the source bundle to the instance:
+
+`scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
+
 Then unzip the _simple_django_app.zip_ file, and remove it from the server:
 
 `unzip simple_django_app.zip`
 
 `rm simple_django_app.zip`
-
-Upload the source bundle to the instance:
-
-`scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
 
 ## Build the docker image
 

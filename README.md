@@ -3,6 +3,7 @@
 Trying to deploy (I mean, really deploy) a Django app to an EC2 instance ~using ECS~
 
 Note: I did it! Rejoice with [~this~](http://ec2-54-210-82-193.compute-1.amazonaws.com:8000/) beauty!
+
 Note: I shutted down the instance, so.... do not rejoice </3
 
 ![](https://s3.amazonaws.com/nigro-public-assets/evil_laugh.gif)

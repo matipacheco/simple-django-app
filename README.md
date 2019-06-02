@@ -10,9 +10,7 @@ Note: I shutted down the instance, so.... do not rejoice </3
 
 # Enter the instance
 
-~I know, I should not put the .pem key here, but... well... fuck off!~
-
-`ssh -i simple_django_app.pem ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com`
+`ssh -i KEY.pem ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com`
 
 # Docker the shit out of this
 
@@ -24,7 +22,7 @@ Generate the source bundle:
 
 Upload the source bundle to the instance:
 
-`scp -i simple_django_app.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
+`scp -i KEY.pem simple_django_app.zip ec2-user@ec2-54-210-82-193.compute-1.amazonaws.com:~`
 
 Then unzip the _simple_django_app.zip_ file, and remove it from the server:
 
